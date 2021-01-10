@@ -79,7 +79,7 @@ class Vulnerd:
                         maturity = i[5]
                         if cve_risk >= 4.5:
                             w.write("\t".join([host, port, cve_id, str(cve_risk), maturity, cve_link]) + "\n")
-        print("Done! Results saved to results.tsv")
+        print(f"Done! Results saved to {new_file_name}.")
 
 
 if __name__ == "__main__":
